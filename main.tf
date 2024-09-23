@@ -5,6 +5,13 @@ resource "azurerm_resource_group" "rg" {
   
 }
 
+resource "azurerm_resource_group" "rgafterstasg" {
+
+    name  = var.rgname
+    location = var.rglocation
+  
+}
+
 variable "rgname" {
      type = string
 }
